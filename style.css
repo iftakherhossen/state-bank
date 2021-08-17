@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+/* Common CSS Start */
+body {
+    font-family: 'Poppins', sans-serif;
+}
+.custom-width {
+    width: 75.5%;
+}
+input {
+    outline: 0;
+    background-color: transparent;
+}
+a:hover {
+    border-bottom: 2px solid white;
+}
+.custom-p-margin {
+    margin: 25px -22px -28px 0;
+}
+/* Common CSS End */
+
+
+/* Animation Style Start */
+.animation-area {
+    width: 100%;
+    height: 100%;
+}
+.circle-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    z-index: -1;
+}
+.circle-area li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 25%;
+    border: 8px solid #ffffff35;
+    animation: animate 20s linear infinite;
+    bottom: -200px;
+}
+.circle-area li:nth-child(1) {
+    left: 86%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 3s;
+}
+.circle-area li:nth-child(2) {
+    left: 15%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 1.5s;
+    animation-duration: 5s;
+}
+.circle-area li:nth-child(3) {
+    left: 74%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 7s;
+}
+.circle-area li:nth-child(4) {
+    left: 42%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+    animation-duration: 9s;
+}
+.circle-area li:nth-child(5) {
+    left: 65%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 11s;
+}
+.circle-area li:nth-child(6) {
+    left: 35%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 4.5s;
+    animation-duration: 4s;
+}
+.circle-area li:nth-child(7) {
+    left: 56%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 9s;
+    animation-duration: 6s;
+}
+.circle-area li:nth-child(8) {
+    left: -9%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 8s;
+}
+.circle-area li:nth-child(9) {
+    left: 95%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 10s;
+}
+    
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-800px) rotate(360deg);
+        opacity: 0;
+    }
+}
+/* Animation Style End */
