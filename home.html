@@ -24,23 +24,23 @@
         </div>
     </header>
     
-    <main class="w-8/12 m-auto">
+    <main class="w-9/12 m-auto">
         <!-- Balance and Transaction Section Start -->
         <section class="mt-12 mb-6 pt-2 px-16">
             <div class="grid grid-cols-3 gap-4 mx-auto">
                 <div class="bg-green-500 p-8 rounded-lg shadow-md text-white">
                     <h4 class="text-xl mb-3">Deposit</h4>
-                    <h3 class="text-2xl font-semibold">$ <span  id="total-deposit">00</span></h3>
+                    <h3 class="text-2xl font-semibold">+ $ <span  id="total-deposit">00</span></h3>
                     <p class="text-sm text-green-300 text-right custom-p-margin">August 2021</p>
                 </div>
                 <div class="bg-red-500 p-8 rounded-lg shadow-md text-white">
                     <h4 class="text-xl mb-3">Withdraw</h4>
-                    <h3 class="text-2xl font-semibold">$ <span id="total-withdraw">00</span></h3>
+                    <h3 class="text-2xl font-semibold">- $ <span id="total-withdraw">00</span></h3>
                     <p class="text-sm text-red-300 custom-p-margin text-right">August 2021</p>
                 </div>
                 <div class="bg-indigo-500 p-8 rounded-lg shadow-md text-white">
                     <h4 class="text-xl mb-3">Balance</h4>
-                    <h3 class="text-2xl font-semibold">$ <span id="total-amount">1135</span></h3>
+                    <h3 class="text-2xl font-semibold">$ <span id="total-amount">1500</span></h3>
                     <p class="text-sm text-indigo-300 text-right custom-p-margin">Total Balance</p>
                 </div>
             </div>
@@ -49,7 +49,7 @@
     
         <!-- Deposit and Withdraw Section Start -->
         <section class="px-16">
-            <div class="grid grid-cols-2 gap-6 w-full mx-auto">
+            <div class="grid grid-cols-2 gap-8 w-full mx-auto">
                 <div class="bg-indigo-200 p-5 rounded-lg shadow-lg">
                     <h3 class="text-2xl ml-2">Deposit</h3>
                     <div>
@@ -61,6 +61,7 @@
                     <h3 class="text-2xl ml-2">Withdraw</h3>
                     <div>
                         <input type="text" id="withdraw-input" class="w-full p-2 border-b-4 text-xl border-red-600 my-2" placeholder="Enter Amount">
+                        <p id="invalid-message" class="text-sm text-red-600"></p>
                         <button id="withdraw-btn" class="text-white bg-red-600 py-1 px-4 rounded-lg mt-3 shadow-md">Withdraw</button>
                     </div>
                 </div>

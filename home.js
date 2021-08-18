@@ -34,11 +34,12 @@ document.getElementById('deposit-btn').addEventListener('click', function () {
 
 // Withdraw Button
 document.getElementById('withdraw-btn').addEventListener('click', function () {
+
     // get the withdraw amount
     const withdrawInput = document.getElementById('withdraw-input');
     const newWithdrawText = withdrawInput.value;
     const newWithdrawAmount = parseFloat(newWithdrawText);
-    
+
     const withdrawTotal = document.getElementById('total-withdraw');
     const previousWithdrawText = withdrawTotal.innerText;
     const previousWithdrawTotal = parseFloat(previousWithdrawText);
@@ -56,4 +57,5 @@ document.getElementById('withdraw-btn').addEventListener('click', function () {
     const newWithdrawBalance = previousWithdrawBalance - newWithdrawAmount;
     withdrawBalance.innerText = newWithdrawBalance;
 })
+
 // Home JS End
